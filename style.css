@@ -1,0 +1,267 @@
+*{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif}
+
+body{
+  margin:0% 10%;
+}
+
+li{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-brand{
+height: 150px;
+}
+
+.navbar{
+  padding: 0% 200px;  
+} 
+
+.navbar-nav{
+  align-items: center;
+}
+
+
+/*index */
+.header{
+  padding-top:180px;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.headerImg{
+  width:100%;
+  opacity:0.5;
+}
+
+.headerText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.title{
+  padding-top:180px;
+  font-size: 3vw;
+  padding-bottom: 1.5vw;
+}
+
+.text{
+  font-size: 1.5vw;
+  padding-bottom: 3vw;
+}
+
+
+.CTAs{
+  display:flex;
+  justify-content: center;
+}
+
+.button{
+  color:#FAB983; 
+  background-color: white;
+  border-radius: 12px;
+  border: 4px solid #FAB983;
+  width: 20%;
+  text-align: center;
+  margin: 0 1%;
+  font-size: 1.5vw;
+}
+
+
+.button:hover{
+  background-color: rgb(211, 112, 32);
+  text-decoration: none;
+  color: white;
+}
+
+/*gallery*/
+
+.gallery{
+  padding: 0 10%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:auto;
+}
+
+.column{
+  display: flex;
+  width: 25%;
+  height: 100%;
+  justify-self: center;
+}
+
+.galleryThumbnail{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.galleryImg{
+  width:100%;
+  padding:10%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.galleryThumbnail:hover .galleryImg{
+  opacity: 0.3;
+}
+
+.galleryThumbnail:hover .overlay{
+  opacity: 1;
+  font-size: 1.5vw;
+  text-align: center;
+  color: rgb(160, 136, 101);
+}
+
+
+/*sign up*/
+
+.signUpDesktop{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.signUpText{
+  font-size: 22px;
+  width: 40%;
+}
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.signUpContainer checkbox {
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 10px;
+} 
+
+input,
+label,
+select {
+  margin: 5px 0;
+}
+
+input,
+select {
+  padding: 10px;
+}
+
+.submit:hover {
+  background: grey;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 500px){
+  .navbar-brand{
+    height:50px;
+  }
+  
+  .navbar{
+    padding: 0% 10%;  
+  } 
+  
+
+  .header{
+    padding-top: 110px;
+    position: relative;
+    color: black;
+    width: 100%;
+  }
+
+  .headerText{
+    position: relative;
+    padding-top: 150px;
+  }
+
+  
+
+  .title{
+    padding-top:80px;
+    font-size:20px;
+  }
+
+  .text{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .CTAs{
+    flex-direction: column;
+  }
+
+  .button{
+    color:white; 
+    background-color: #FAB983;
+    border: 1px solid #FAB983;
+    height: 20px;
+    text-align: center;  
+    width:100%;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  
+
+
+  /* gallery */
+  .column{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+  }
+
+  .galleryThumbnail:hover .overlay{
+    font-size: 18px;
+  }
+
+  /* sign up */
+  .signUpDesktop{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signUpText{
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px;
+  }
+
+  .signUpContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+
+}
